@@ -38,6 +38,27 @@
         justify-content: space-evenly;
         text-align: left;
     }
+    #logo-github {
+        width: 50px;
+        height: auto;
+    }
+    #logo-linkedin {
+        width: 52px;
+        height: auto;
+    }
+    #logo-gitlab {
+        width: 55px;
+        height: auto;
+    }
+    #logo-github:hover {
+        transform: none;
+    }
+    #logo-linkedin:hover {
+        transform: none;
+    }
+    #logo-gitlab:hover {
+        transform: none;
+    }
     .info {
         margin-bottom: 5%;
     }
@@ -46,6 +67,8 @@
         flex-flow: column wrap;
         justify-content: space-around;
     }
-
-    
+    .card:target .card-inner {
+        transform: rotateY(180deg);
+        cursor: grab;
+    }
 }
