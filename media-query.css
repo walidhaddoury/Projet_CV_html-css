@@ -66,12 +66,5 @@
         display: flex;
         flex-flow: column wrap;
         justify-content: space-around;
-    }
-    .card-inner {
-        transition: none;
-        transform-style: none;
-    }
-    .card:target .card-inner {
-        transform: none;
-    }
+    }    
 }
