@@ -19,16 +19,10 @@
     .CVLogo {
         width: 150px;
         height: 150px;
-        border-radius: 50%;
-        margin-bottom: 3%;
-        border: 7px solid white;
     }
     .photo {
         width: 150px;
         height: 150px;
-        border-radius: 50%;
-        margin-bottom: 3%;
-        border: 7px solid white;
     }
     p {
         text-align: left;
