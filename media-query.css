@@ -67,8 +67,11 @@
         flex-flow: column wrap;
         justify-content: space-around;
     }
+    .card-inner {
+        transition: none;
+        transform-style: none;
+    }
     .card:target .card-inner {
-        transform: rotateY(180deg);
-        cursor: grab;
+        transform: none;
     }
 }
