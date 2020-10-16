@@ -1,0 +1,41 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    * {
+        font-size: small;
+    }
+    h1 {
+        font-size: x-large;
+    }
+    h2 {
+        font-size: x-large;
+    }
+    h4 {
+        font-weight: bolder;
+        text-align: left;
+    }
+    h5 {
+        font-weight: bold;
+        text-align: left;
+    }
+    p {
+        text-align: left;
+    }
+    .card {
+        width: 250px;
+        height: 250px;
+        box-sizing: border-box;
+    }
+    .card-back {
+        padding: 10%;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: left;
+    }
+    .info {
+        margin-bottom: 5%;
+    }
+    .infoBar {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+}

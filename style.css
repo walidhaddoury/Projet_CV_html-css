@@ -1,0 +1,271 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    padding: 0 0 40px;
+}
+
+body {
+    background: black;
+}
+
+/* disposition col et logo et h1 */
+
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+    animation: ZoomIn 4s ease-in-out;
+}
+
+@keyframes ZoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h1 {
+    color: white;
+    font-style: oblique;
+    margin-bottom: 2%;
+}
+
+/* display photo logo */
+
+.CVLogo {
+    width: 286px;
+    height: auto;
+    border: 7px solid white;
+    border-radius: 50%;
+    margin-bottom: 3%;
+    transition: all 4s ease-in-out;
+}
+
+.photo {
+    width: 286px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 3%;
+    border: 7px solid white;
+}
+
+.CVLogo:hover {
+    backface-visibility: unset;
+    transition: transform 4s;
+    transform: rotate(1turn);
+}
+
+.photo-display {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    animation: ZoomIn 3s ease-in-out;
+}
+
+/* affichage du logo prénoms et logo social */
+.logo-social a {
+    text-decoration: none;
+}
+
+.logo-social {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo-github {
+    transition: all 1.2s ease-in-out;
+    width: 68px;
+    height: auto;
+    filter: invert(1);
+}
+
+#logo-github:hover {
+    transform: scale(1.5) rotate(1turn);
+    filter: invert(1);
+}
+
+#logo-linkedin {
+    transition: all 1.2s ease-in-out;
+    width: 68px;
+    height: auto;
+}
+
+#logo-linkedin:hover {
+    transform: scale(1.5) rotate(1turn);
+}
+
+#logo-gitlab {
+    transition: all 1.2s ease-in-out;
+    width: 68px;
+    height: auto;
+}
+
+#logo-gitlab:hover {
+    transform: scale(1.5) rotate(1turn);
+}
+
+/* ligne pour diviser la page */
+
+hr {
+    border-top: 7px solid whitesmoke;
+    margin-bottom: 3%;
+    animation: ZoomIn 4s ease-in-out;
+}
+
+/* infos perso et affichage */
+
+.infoBar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    animation: ZoomIn 4s ease-in-out;
+}
+
+@keyframes SlideIn {
+    0% {
+       opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.info p {
+    margin-top: 1%;
+}
+
+.logo-maison {
+    width: 45px;
+    height: auto;
+    filter: invert(1);
+}
+
+.logo-permis {
+    width: 45px;
+    height: auto;
+    filter: invert(1);
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    filter: invert(1);
+    margin-bottom: 10px;
+}
+
+/* display all cards */
+
+.all-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    font-size: x-large;
+}
+
+/* card et effets */
+
+.card {
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    border-radius: 10%;
+    margin-top: 8%;
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+    cursor: grab;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10%;
+}
+
+.card-back {
+    padding: 5%;
+    background-color: whitesmoke;
+    color: black;
+    transform: rotateY(180deg);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* logo cards */
+
+.logo-card {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10%;
+    margin-left: 25%;
+}
+
+.card-front h2 {
+    text-align: center;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    padding: 2%;
+}
+
+footer p {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+h4 {
+    color: goldenrod;
+}
